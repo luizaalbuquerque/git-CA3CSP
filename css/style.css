@@ -22,7 +22,7 @@ body {
     
   }
   .navbar {
-    background-color: black;
+    background-color: rgb(156, 231, 94);
     padding: 20px 0 0 20px;
     width: 100%;
     float: left;
@@ -32,32 +32,32 @@ body {
     padding: 0;
     list-style: none;
     float: left;
-    margin: 24px 0 0 0;
+    margin: 10px 0 0 0;
   }
   
   .navbar ul li {
     display: inline;
-    padding: 40px;
+    padding: 100px;
   }
   
   .navbar li a {
     text-align: center;
-    padding: 14px 16px;
+    padding: 3px 10px;
     text-decoration: none;
   }
   
   .navbar ul li a {
-    color: #00ffff;
+    color: #055a3e;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-  
+/*   
     font-size: 100%;
     max-width: 100%;
     max-height: 78px;
     min-width: 100%;
-    min-height: 78px;
+    min-height: 78px; */
   }
   
   .navbar ul li a:hover {
-    background-color: rgb(11, 137, 240);
+    background-color: rgb(6, 184, 130);
   }
   
