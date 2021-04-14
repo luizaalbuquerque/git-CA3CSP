@@ -3,3 +3,61 @@
     margin:auto;
 background-color: aqua;
 }
+body {
+    background-image: url("../images/restaurantImage.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+   }
+   .Pvalidator {
+    /* border: 2px solid black; */
+    outline: #398dbe double 10px;
+    background-color: rgb(167, 211, 252);
+
+    /* opacity: 0.7; */
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+    
+  }
+  .navbar {
+    background-color: black;
+    padding: 20px 0 0 20px;
+    width: 100%;
+    float: left;
+    display: inline;
+  }
+  .navbar ul {
+    padding: 0;
+    list-style: none;
+    float: left;
+    margin: 24px 0 0 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    padding: 40px;
+  }
+  
+  .navbar li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a {
+    color: #00ffff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  
+    font-size: 100%;
+    max-width: 100%;
+    max-height: 78px;
+    min-width: 100%;
+    min-height: 78px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: rgb(11, 137, 240);
+  }
+  
