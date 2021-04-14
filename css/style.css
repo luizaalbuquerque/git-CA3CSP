@@ -21,18 +21,15 @@ body {
     text-align: center;
     
   }
-  .navbar {
-    background-color: rgb(156, 231, 94);
-    padding: 20px 0 0 20px;
-    width: 100%;
+  .navbar a {
     float: left;
-    display: inline;
-  }
-  .navbar ul {
-    padding: 0;
-    list-style: none;
-    float: left;
-    margin: 10px 0 0 0;
+    background-color: black;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
   
   .navbar ul li {
@@ -40,24 +37,13 @@ body {
     padding: 100px;
   }
   
-  .navbar li a {
-    text-align: center;
-    padding: 3px 10px;
-    text-decoration: none;
-  }
-  
   .navbar ul li a {
     color: #055a3e;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-/*   
-    font-size: 100%;
-    max-width: 100%;
-    max-height: 78px;
-    min-width: 100%;
-    min-height: 78px; */
   }
-  
-  .navbar ul li a:hover {
-    background-color: rgb(6, 184, 130);
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
   }
   
