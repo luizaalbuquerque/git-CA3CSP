@@ -1,7 +1,9 @@
 .menu {
-    width:500px;
+    width:80%;
+    border: 5px solid rgb(0, 0, 0);
+    border-style:double;
     margin:auto;
-background-color: aqua;
+background-color: rgb(238, 190, 118);
 }
 body {
     background-image: url("../images/restaurantImage.jpeg");
@@ -11,19 +13,17 @@ body {
     height: 100%;
    }
    .Pvalidator {
-    /* border: 2px solid black; */
     outline: #398dbe double 10px;
     background-color: rgb(167, 211, 252);
     position:absolute;
-    top:50%;
-    left:50%;
-    margin-top:-50px; 
-    margin-left:-150px;
-    text-align: center;
+    width:80%;
+    margin:60px;
+padding:50px;
+text-align: center;
     
   }
   .navbar a {
-    float: left;
+    float: right;
     background-color: black;
     display: block;
     color: #f2f2f2;
@@ -43,8 +43,25 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
   }
 
-  .navbar a:hover {
+  .navbar a:hover { 
     background: #ddd;
     color: black;
   }
-  
+  .logo{
+    background-image: url("../images/logo.png");
+  }
+.title{
+    font-family: cursive, fantasy, monospace;
+    text-align: center;
+} 
+/* index.html */
+.content{
+  width:80%;
+    border: 5px solid rgb(0, 0, 0);
+    border-style:double;
+    margin:60px;
+padding:30px;
+text-align: center;
+font-family: Georgia, Times, 'Times New Roman', serif;
+background-color: rgb(238, 190, 118);
+}
