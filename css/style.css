@@ -1,3 +1,4 @@
+/* content style */
 .menu {
     width:80%;
     border: 5px solid rgb(0, 0, 0);
@@ -13,17 +14,7 @@ body {
     background-size: cover;
     height: 100%;
    }
-   .Pvalidator {
-    border: 5px solid rgb(0, 0, 0);
-    border-style:double;
-    background-color: rgb(238, 190, 118);
-    position:absolute;
-    width:80%;
-    margin:60px;
-padding:50px;
-text-align: center;
-    
-  }
+ /* navegation bar */
   .navbar a {
     float: right;
     background-color: black;
