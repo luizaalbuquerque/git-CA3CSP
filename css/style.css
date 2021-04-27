@@ -1,9 +1,6 @@
 /* content style */
-.title{
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  text-align: right;
-}
-.menu {
+
+.box {
     width:60%;
     text-align: center;
     border: 5px solid rgb(0, 0, 0);
