@@ -24,19 +24,45 @@ function validate() {
     }
 }
 
-function total(nomedadiv){
+// totals
+function total(namediv){
     
-    var els = document.getElementById(nomedadiv).getElementsByTagName("input");
+    var els = document.getElementById(namediv).getElementsByTagName("input");
     var totaldiv = 0;
- 
+
 
     for (var i =0; i < els.length;i++)
     {
-        multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
-        totaldiv = totaldiv + multiplicacao;
+        if (namediv === "starters" || namediv === "main" ) 
+        {   
+          
+           
+            if ("Mushroom Brushchetta with Balsamic and Thyme" === els[i].getAttribute("name") || "Creamy Brocoli pasta" === els[i].getAttribute("name"))
+            {
+                
+
+                vegvalue = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
+
+            
+    var ItemsTotal = document.getElementById("veg"+ namediv)
+    ItemsTotal.innerHTML = "€" + vegvalue;
+    // validate = 1;
+
+    var ItemsTotal = document.getElementById("non-veg"+namediv)
+    ItemsTotal.innerHTML = "€" + totaldiv;
+
+            }
+        }
+        
+        
+        multiply = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
+        totaldiv = totaldiv + multiply;
+     
      
     }
-    var ItemsTotal = document.getElementById("ItemsTotal"+ nomedadiv)
+    
+
+    var ItemsTotal = document.getElementById("ItemsTotal"+ namediv)
     ItemsTotal.innerHTML = "€" + totaldiv;
 }
 
