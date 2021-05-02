@@ -43,6 +43,7 @@
 
     </div>
     <div class="box">
+        <div id="Total">
         <h1>Menu</h1>
 
         <table>
@@ -52,30 +53,30 @@
 
                 <th>Quantity</th>
                 <th>Price</th>
-
+<div id="starters">
             <tr>
                 <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
                 <td>
-                    <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="11" />
+                    <input id="1" value="0" size="2" data-price="11" />
                 </td>
                 <td>€11</td>
             </tr>
             <tr>
                 <td>Prawn cocktail</td>
-                <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="9" /></td>
+                <td><input id="2" value="0" size="2" data-price="9" /></td>
                 <td>€9</td>
             </tr>
             <tr>
                 <td>Blooming onion with fry sauce</td>
-                <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="6" /></td>
+                <td><input id="3" value="0" size="2" data-price="6" /></td>
                 <td>€6</td>
             </tr>
             <tr>
                 <td>Mushroom Brushchetta with Balsamic and Thyme</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9" /></td>
+                <td><input  id="4" value="0" size="2" data-price="9" /></td>
                 <td>€9</td>
             
-        
+            </div>
             <tr>
                 <td class="total">&nbsp;</td>
                 <td class="total right"><strong>Total:</strong></td>
@@ -83,12 +84,13 @@
      
                         <div id="ItemsTotal">€0</div>
                     </strong>
-                    <button onclick="Total()" type="button">Total</button>
+                    <button onclick="Starters()" type="button">Total</button>
             </tr>
 </tr>
         </table>
         <table>
             <h3>Main</h3>
+            <div id="main">
             <tr>
                 <th>&nbsp;</th>
 
@@ -125,11 +127,13 @@
                         <div id="ItemsTotal">€0</div>
                     
                     </strong>
-                    <button onclick="Total()" type="button">Total</button>
+                    <button onclick="Main()" type="button">Total</button>
             </tr>
             <tr>
+            </div>
                 <table>
                     <h3>Desserts</h3>
+                    <div id="desserts">
                     <tr>
                         <th>&nbsp;</th>
         
@@ -165,14 +169,15 @@
                                 <div id="ItemsTotal">€0</div>
                             
                             </strong>
-                            <button onclick="Total()" type="button">Total</button>
+                            <button onclick="Desserts()" type="button">Total</button>
                     </tr>
-
+                </div>
                 </table>
 
                 <table>
 
                     <h3>Drinks</h3>
+                    <div id="drinks">
                     <tr>
                         <th>&nbsp;</th>
         
@@ -182,7 +187,7 @@
                     <tr>
                     <tr>
                         <td>Coke</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="3" /></td>
+                        <td><input  id="" value="0" size="3" data-price="3" /></td>
                         <td>€3</td>
                     </tr>
                     <tr>
@@ -225,7 +230,7 @@
 
 
                 </table>
-                <button onclick="Total()" type="button">Total</button>
+                <button onclick="Drinks()" type="button">Total</button>
             <tr>
                 <td class="total">&nbsp;</td>
                 <td class="total right"><strong>Total:</strong></td>
@@ -235,7 +240,10 @@
                     </strong></td>
             </tr>
 
-
+            <button onclick="Total()" type="button">Total</button> 
+               
+        </div>
+        </div>
     </div>
     <!-- Footer -->
     <div class="footer">
