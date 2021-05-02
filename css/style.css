@@ -123,3 +123,13 @@ background-color: rgb(238, 190, 118);
 .footercolor h5 a {
   color:rgb(238, 190, 118);
 }
+
+
+/* Password validator */
+#valid {
+  display: none;
+}
+#inValid {
+  display: none;
+}
+
