@@ -45,7 +45,7 @@
     <div class="box">
         <div id="Total">
         <h1>Menu</h1>
-
+        <div id="total">
         <table>
             <h3>Starters</h3>
             <tr>
@@ -53,7 +53,7 @@
 
                 <th>Quantity</th>
                 <th>Price</th>
-<div id="starters">
+
             <tr>
                 <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
                 <td>
@@ -81,16 +81,17 @@
                 <td class="total">&nbsp;</td>
                 <td class="total right"><strong>Total:</strong></td>
                 <td class="total"><strong>
-     
-                        <div id="ItemsTotal">€0</div>
+
+                        <div id="ItemsTotalstarters">€0</div>
                     </strong>
-                    <button onclick="Starters()" type="button">Total</button>
+                    <button onclick="total('starters')" type="button">Total</button>
             </tr>
 </tr>
         </table>
+        <div id="main">
         <table>
             <h3>Main</h3>
-            <div id="main">
+      
             <tr>
                 <th>&nbsp;</th>
 
@@ -124,16 +125,17 @@
                 <td class="total right"><strong>Total:</strong></td>
                 <td class="total"><strong>
 
-                        <div id="ItemsTotal">€0</div>
+                        <div id="ItemsTotalmain">€0</div>
                     
                     </strong>
-                    <button onclick="Main()" type="button">Total</button>
+                    <button onclick="total('main')" type="button">Total</button>
             </tr>
             <tr>
             </div>
+            <div id="desserts">
                 <table>
                     <h3>Desserts</h3>
-                    <div id="desserts">
+                
                     <tr>
                         <th>&nbsp;</th>
         
@@ -166,18 +168,18 @@
                         <td class="total right"><strong>Total:</strong></td>
                         <td class="total"><strong>
         
-                                <div id="ItemsTotal">€0</div>
+                                <div id="ItemsTotaldesserts">€0</div>
                             
                             </strong>
-                            <button onclick="Desserts()" type="button">Total</button>
+                            <button onclick="total('desserts')" type="button">Total</button>
                     </tr>
                 </div>
                 </table>
-
+                <div id="drinks">
                 <table>
 
                     <h3>Drinks</h3>
-                    <div id="drinks">
+              
                     <tr>
                         <th>&nbsp;</th>
         
@@ -230,17 +232,17 @@
 
 
                 </table>
-                <button onclick="Drinks()" type="button">Total</button>
+                <button onclick="total('drinks')" type="button">Total</button>
             <tr>
                 <td class="total">&nbsp;</td>
                 <td class="total right"><strong>Total:</strong></td>
                 <td class="total"><strong>
 
-                        <div id="ItemsTotal">€0</div>
+                        <div id="ItemsTotaltotal">€0</div>
                     </strong></td>
             </tr>
 
-            <button onclick="Total()" type="button">Total</button> 
+            <button onclick="Total('total')" type="button">Total</button> 
                
         </div>
         </div>
