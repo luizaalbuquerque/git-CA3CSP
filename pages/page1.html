@@ -5,7 +5,9 @@
     <title>Page 1</title>
     <link rel="stylesheet" href="../css/style.css">
 
+
 </head>
+
 <body>
     <!-- navegation bar -->
     <div class="navbar">
@@ -16,166 +18,223 @@
         </ul>
     </div>
     <!-- content -->
+    <!-- logo -->
     <h1 class="title">Let's eat </h1>
+    <!-- Password validator -->
     <div class="box">
         <h1>Staff</h1>
         <label for="PasswordValidator" id="Pvalidator">Password Validator</label>
-        <input type="text" id="PasswordValidator" placeholder="Password"></form><br>
-
-        <label id="inValid" style="color:red; visibility: hidden;">Invalid Password</label><br>
-        <label id="Valid" style="color:red; visibility: hidden;">Valid Password</label>
+        <input type="text" id="PasswordValidator" placeholder="Insert your Password"><br>
+        <div id="valid" style="color:green;">Valid Password<br></div>
+        <div id="inValid" style="color:red;">Invalid Password<br></div>
         <br>
         <button onclick="validate()" type="button">Submit</button>
-    
-    <h3>The password must have:</h3>
-    <p>1. One lowercase letter</p>
-    <p>2. One uppercase letter</p>
-    <p>3. One digit and one special character</p>
-    <p>4. At least eight characters long</p>
-</div>
+        <h3>The password must have:</h3>
+        <p>1. One lowercase letter</p>
+        <p>2. One uppercase letter</p>
+        <p>3. One digit and one special character</p>
+        <p>4. At least eight characters long</p>
+
+    </div>
+
     <div class="box">
-<h1>Customers</h1>
+        <h1>Customers</h1>
 
 
     </div>
     <div class="box">
         <h1>Menu</h1>
-        
+
         <table>
             <h3>Starters</h3>
             <tr>
                 <th>&nbsp;</th>
-   
+
                 <th>Quantity</th>
                 <th>Price</th>
-                
+
             <tr>
                 <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
                 <td>
-                    <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="11"/></td>
+                    <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="11" />
+                </td>
                 <td>€11</td>
             </tr>
             <tr>
                 <td>Prawn cocktail</td>
-                <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="9"/></td>
+                <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="9" /></td>
                 <td>€9</td>
             </tr>
             <tr>
                 <td>Blooming onion with fry sauce</td>
-                <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="6"/></td>
+                <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="6" /></td>
                 <td>€6</td>
             </tr>
             <tr>
                 <td>Mushroom Brushchetta with Balsamic and Thyme</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9"/></td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9" /></td>
                 <td>€9</td>
+            
+        
+            <tr>
+                <td class="total">&nbsp;</td>
+                <td class="total right"><strong>Total:</strong></td>
+                <td class="total"><strong>
+     
+                        <div id="ItemsTotal">€0</div>
+                    </strong>
+                    <button onclick="Total()" type="button">Total</button>
             </tr>
+</tr>
         </table>
         <table>
             <h3>Main</h3>
             <tr>
+                <th>&nbsp;</th>
+
+                <th>Quantity</th>
+                <th>Price</th>
+
+            <tr>
+            <tr>
                 <td>Smoked Salmon & Lemon risotto</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="15"/></td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="15" /></td>
                 <td>€15</td>
             </tr>
             <tr>
                 <td>Sausage & courgette pilau</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11"/></td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11" /></td>
                 <td>€11</td>
             </tr>
             <tr>
                 <td>Chicken Strogonoff</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="12"/></td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="12" /></td>
                 <td>€12</td>
             </tr>
             <tr>
                 <td>Creamy Brocoli pasta</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11"/></td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11" /></td>
                 <td>€11</td>
+            </tr>
+             
+            <tr>
+                <td class="total">&nbsp;</td>
+                <td class="total right"><strong>Total:</strong></td>
+                <td class="total"><strong>
+
+                        <div id="ItemsTotal">€0</div>
+                    
+                    </strong>
+                    <button onclick="Total()" type="button">Total</button>
             </tr>
             <tr>
                 <table>
                     <h3>Desserts</h3>
                     <tr>
+                        <th>&nbsp;</th>
+        
+                        <th>Quantity</th>
+                        <th>Price</th>
+        
+                    <tr>
+                    <tr>
                         <td>Classic Petit Gateu</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9"/></td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9" /></td>
                         <td>€9</td>
                     </tr>
                     <tr>
                         <td>Tiramisu</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7"/></td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7" /></td>
                         <td>€7</td>
                     </tr>
                     <tr>
                         <td>Custard Pudding</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6"/></td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6" /></td>
                         <td>€6</td>
                     </tr>
                     <tr>
                         <td>Vegan Lemon Cheesecake</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7"/></td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7" /></td>
                         <td>€7</td>
                     </tr>
-                 
-        </table>
-    
-        <table>
-            <h3>Drinks</h3>
-            <tr>
-                <td>Coke</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="3"/></td>
-                <td>€3</td>
-            </tr>
-            <tr>
-                <td>Fresh Orange Juice</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6"/></td>
-                <td>€6</td>
-            </tr>
-            <tr>
-                <td>White wine or Red wine</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="8"/></td>
-                <td>€8</td>
-            </tr>
-            <tr>
-                <td>Coconut water</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6"/></td>
-                <td>€6</td>
-            </tr>
-            <tr>
-                <td>Coffee Latte</td>
-                <select id="milk">
-                    <option value="1">fresh milk</option>
-                    <option value="2">coconut</option>
-                    <option value="3">almond</option>
-                    </select></p>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="4"/></td>
-                <td>€4</td>
-            </tr>
+                    <tr>
+                        <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
         
+                                <div id="ItemsTotal">€0</div>
+                            
+                            </strong>
+                            <button onclick="Total()" type="button">Total</button>
+                    </tr>
+
+                </table>
+
+                <table>
+
+                    <h3>Drinks</h3>
+                    <tr>
+                        <th>&nbsp;</th>
+        
+                        <th>Quantity</th>
+                        <th>Price</th>
+        
+                    <tr>
+                    <tr>
+                        <td>Coke</td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="3" /></td>
+                        <td>€3</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Orange Juice</td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6" /></td>
+                        <td>€6</td>
+                    </tr>
+                    <tr>
+                        <td>White wine or Red wine</td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="8" /></td>
+                        <td>€8</td>
+                    </tr>
+                    <tr>
+                        <td>Coconut water</td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6" /></td>
+                        <td>€6</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Latte</td>
+                        <select id="milk">
+                            <option value="1">fresh milk</option>
+                            <option value="2">coconut</option>
+                            <option value="3">almond</option>
+                        </select></p>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="4" /></td>
+                        <td>€4</td>
+                    </tr>
+
+                    <tr>
+                        <td>Iced Latte</td>
+                        <select id="syrup">
+                            <option value="1">no syrup</option>
+                            <option value="2">vanilla</option>
+                            <option value="3">caramel</option>
+                            <option value="4">hazelnut</option>
+                        </select></p>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="5" /></td>
+                        <td>€5</td>
+                    </tr>
+
+
+                </table>
+                <button onclick="Total()" type="button">Total</button>
             <tr>
-                <td>Iced Latte</td>
-                <select id="syrup">
-                    <option value="1">no syrup</option>
-                    <option value="2">vanilla</option>
-                    <option value="3">caramel</option>
-                    <option value="4">hazelnut</option>
-                    </select></p>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="5"/></td>
-                <td>€5</td>
-            </tr>       
-    
-               
-    </table>
+                <td class="total">&nbsp;</td>
+                <td class="total right"><strong>Total:</strong></td>
+                <td class="total"><strong>
 
-    <tr>
-        <td class="total">&nbsp;</td>
-        <td class="total right"><strong>Total:</strong></td>
-        <td class="total"><strong>
-                <div id="ItemsTotal">€0</div>
-            </strong></td>
-    </tr>
+                        <div id="ItemsTotal">€0</div>
+                    </strong></td>
+            </tr>
 
-   
 
     </div>
     <!-- Footer -->
@@ -199,4 +258,5 @@
     </div>
     <script src="../script/script.js"></script>
 </body>
+
 </html>
