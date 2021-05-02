@@ -43,105 +43,126 @@
 
     </div>
     <div class="box">
-        <div id="Total">
-        <h1>Menu</h1>
         <div id="total">
-        <table>
-            <h3>Starters</h3>
-            <tr>
-                <th>&nbsp;</th>
 
-                <th>Quantity</th>
-                <th>Price</th>
+            <h1>Menu</h1>
+            <div id="starters">
+                <table>
+                    <h3>Starters</h3>
+                    <tr>
+                        <th>&nbsp;</th>
 
-            <tr>
-                <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
-                <td>
-                    <input id="1" value="0" size="2" data-price="11" />
-                </td>
-                <td>€11</td>
-            </tr>
-            <tr>
-                <td>Prawn cocktail</td>
-                <td><input id="2" value="0" size="2" data-price="9" /></td>
-                <td>€9</td>
-            </tr>
-            <tr>
-                <td>Blooming onion with fry sauce</td>
-                <td><input id="3" value="0" size="2" data-price="6" /></td>
-                <td>€6</td>
-            </tr>
-            <tr>
-                <td>Mushroom Brushchetta with Balsamic and Thyme</td>
-                <td><input  id="4" value="0" size="2" data-price="9" /></td>
-                <td>€9</td>
-            
+                        <th>Quantity</th>
+                        <th>Price</th>
+
+                    <tr>
+                        <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
+                        <td>
+                            <input name="Deep-Fried Mozzarella balls with smoky tomato sauce" id="1" value="0" size="2"
+                                data-price="11" />
+                        </td>
+                        <td>€11</td>
+                    </tr>
+                    <tr>
+                        <td>Prawn cocktail</td>
+                        <td><input name="Prawn cocktail" id="2" value="0" size="2" data-price="9" /></td>
+                        <td>€9</td>
+                    </tr>
+                    <tr>
+                        <td>Blooming onion with fry sauce</td>
+                        <td><input name="Blooming onion with fry sauce" id="3" value="0" size="2" data-price="6" /></td>
+                        <td>€6</td>
+                    </tr>
+                    <tr>
+                        <td>Mushroom Brushchetta with Balsamic and Thyme</td>
+                        <td><input name="Mushroom Brushchetta with Balsamic and Thyme" id="4" value="0" size="2"
+                                data-price="9" /></td>
+                        <td>€9</td>
+
             </div>
+            
             <tr>
                 <td class="total">&nbsp;</td>
-                <td class="total right"><strong>Total:</strong></td>
+                <td class="total right"><strong>Total Sem ser vegano:</strong></td>
                 <td class="total"><strong>
 
                         <div id="ItemsTotalstarters">€0</div>
                     </strong>
+                    <label>Vegetarian Total</label>
+                    <div id="vegstarters">€0</div>
+
+                    <label>Non-vegetarian Total </label>
+                    <div id="non-vegstarters">€0</div>
                     <button onclick="total('starters')" type="button">Total</button>
             </tr>
-</tr>
-        </table>
-        <div id="main">
-        <table>
-            <h3>Main</h3>
-      
-            <tr>
-                <th>&nbsp;</th>
+            </tr>
+            </table>
 
-                <th>Quantity</th>
-                <th>Price</th>
+            <div id="main">
+                <table>
+                    <h3>Main</h3>
 
-            <tr>
-            <tr>
-                <td>Smoked Salmon & Lemon risotto</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="15" /></td>
-                <td>€15</td>
-            </tr>
-            <tr>
-                <td>Sausage & courgette pilau</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11" /></td>
-                <td>€11</td>
-            </tr>
-            <tr>
-                <td>Chicken Strogonoff</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="12" /></td>
-                <td>€12</td>
-            </tr>
-            <tr>
-                <td>Creamy Brocoli pasta</td>
-                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="11" /></td>
-                <td>€11</td>
-            </tr>
-             
-            <tr>
-                <td class="total">&nbsp;</td>
-                <td class="total right"><strong>Total:</strong></td>
-                <td class="total"><strong>
+                    <tr>
+                        <th>&nbsp;</th>
 
-                        <div id="ItemsTotalmain">€0</div>
-                    
-                    </strong>
-                    <button onclick="total('main')" type="button">Total</button>
-            </tr>
-            <tr>
+                        <th>Quantity</th>
+                        <th>Price</th>
+
+                    <tr>
+                    <tr>
+                        <td>Smoked Salmon & Lemon risotto</td>
+                        <td><input name="Smoked Salmon & Lemon risotto" type="text" id="qnt_4" value="0" size="3"
+                                data-price="15" /></td>
+                        <td>€15</td>
+                    </tr>
+                    <tr>
+                        <td>Sausage & courgette pilau</td>
+                        <td><input name="Sausage & courgette pilau" type="text" id="qnt_4" value="0" size="3"
+                                data-price="11" /></td>
+                        <td>€11</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Stroganoff</td>
+                        <td><input name="Chicken Stroganoff" type="text" id="qnt_4" value="0" size="3"
+                                data-price="12" /></td>
+                        <td>€12</td>
+                    </tr>
+                    <tr>
+                        <td>Creamy Brocoli pasta</td>
+                        <td><input name="Creamy Brocoli pasta" type="text" id="qnt_4" value="0" size="3"
+                                data-price="11" /></td>
+                        <td>€11</td>
+                    </tr>
+
+                    <tr>
+                        <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+
+                                <div id="ItemsTotalmain">€0</div>
+
+                            </strong>
+                            <button onclick="total('main')" type="button">Total</button>
+                    </tr>
+                    <tr>
             </div>
+            <label>Vegetarian Total </label>
+            <div id="vegmain">€0</div>
+
+            <label>Non-vegetarian Total</label>
+            <div id="non-vegmain">€0</div>
+
+            </table>
             <div id="desserts">
                 <table>
                     <h3>Desserts</h3>
-                
+
                     <tr>
                         <th>&nbsp;</th>
-        
+
                         <th>Quantity</th>
                         <th>Price</th>
-        
+
                     <tr>
                     <tr>
                         <td>Classic Petit Gateu</td>
@@ -167,29 +188,30 @@
                         <td class="total">&nbsp;</td>
                         <td class="total right"><strong>Total:</strong></td>
                         <td class="total"><strong>
-        
+
                                 <div id="ItemsTotaldesserts">€0</div>
-                            
+
                             </strong>
                             <button onclick="total('desserts')" type="button">Total</button>
                     </tr>
-                </div>
+
                 </table>
-                <div id="drinks">
+            </div>
+            <div id="drinks">
                 <table>
 
                     <h3>Drinks</h3>
-              
+
                     <tr>
                         <th>&nbsp;</th>
-        
+
                         <th>Quantity</th>
                         <th>Price</th>
-        
+
                     <tr>
                     <tr>
                         <td>Coke</td>
-                        <td><input  id="" value="0" size="3" data-price="3" /></td>
+                        <td><input id="" value="0" size="3" data-price="3" /></td>
                         <td>€3</td>
                     </tr>
                     <tr>
@@ -231,21 +253,25 @@
                     </tr>
 
 
+
+                    <button onclick="total('drinks')" type="button">Total</button>
+                    <div id="ItemsTotaldrinks">€0</div>
+                    <tr>
+                        <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+
+                                <div id="ItemsTotaltotal">€0</div>
+                            </strong></td>
+                    </tr>
                 </table>
-                <button onclick="total('drinks')" type="button">Total</button>
-            <tr>
-                <td class="total">&nbsp;</td>
-                <td class="total right"><strong>Total:</strong></td>
-                <td class="total"><strong>
+            </div>
+            <button onclick="total('total')" type="button">Total</button>
 
-                        <div id="ItemsTotaltotal">€0</div>
-                    </strong></td>
-            </tr>
+        </div>
 
-            <button onclick="Total('total')" type="button">Total</button> 
-               
-        </div>
-        </div>
+    </div>
+    </div>
     </div>
     <!-- Footer -->
     <div class="footer">
