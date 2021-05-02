@@ -26,7 +26,13 @@
         <label id="Valid" style="color:red; visibility: hidden;">Valid Password</label>
         <br>
         <button onclick="validate()" type="button">Submit</button>
-    </div>
+    
+    <h3>The password must have:</h3>
+    <p>1. One lowercase letter</p>
+    <p>2. One uppercase letter</p>
+    <p>3. One digit and one special character</p>
+    <p>4. At least eight characters long</p>
+</div>
     <div class="box">
 <h1>Customers</h1>
 
@@ -39,8 +45,10 @@
             <h3>Starters</h3>
             <tr>
                 <th>&nbsp;</th>
+   
                 <th>Quantity</th>
                 <th>Price</th>
+                
             <tr>
                 <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
                 <td>
@@ -108,66 +116,76 @@
                         <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7"/></td>
                         <td>€7</td>
                     </tr>
-                    <tr>
-                <td class="total">&nbsp;</td>
-                <td class="total right"><strong>Total:</strong></td>
-                <td class="total"><strong>
-                        <div id="ItemsTotal">€0</div>
-                    </strong></td>
-            </tr>
+                 
         </table>
     
+        <table>
+            <h3>Drinks</h3>
+            <tr>
+                <td>Coke</td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="3"/></td>
+                <td>€3</td>
+            </tr>
+            <tr>
+                <td>Fresh Orange Juice</td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6"/></td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>White wine or Red wine</td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="8"/></td>
+                <td>€8</td>
+            </tr>
+            <tr>
+                <td>Coconut water</td>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="6"/></td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>Coffee Latte</td>
+                <select id="milk">
+                    <option value="1">fresh milk</option>
+                    <option value="2">coconut</option>
+                    <option value="3">almond</option>
+                    </select></p>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="4"/></td>
+                <td>€4</td>
+            </tr>
+        
+            <tr>
+                <td>Iced Latte</td>
+                <select id="syrup">
+                    <option value="1">no syrup</option>
+                    <option value="2">vanilla</option>
+                    <option value="3">caramel</option>
+                    <option value="4">hazelnut</option>
+                    </select></p>
+                <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="5"/></td>
+                <td>€5</td>
+            </tr>       
+    
+               
+    </table>
 
+    <tr>
+        <td class="total">&nbsp;</td>
+        <td class="total right"><strong>Total:</strong></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0</div>
+            </strong></td>
+    </tr>
 
-<h3>Drinks</h3>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">Coke</p>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">Fresh Orange juice</p>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">White wine or Red wine</p>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">Coconut water</p>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">Coffee Latte
-<select id="milk">
-    <option value="1">fresh milk</option>
-    <option value="2">coconut</option>
-    <option value="3">almond</option>
-    </select></p>
-<p><input type="checkbox" id="myCheck" onclick="myFunction()">Iced Cooffe Latte
-<select id="syrup">
-    <option value="1"> no syrup</option>
-    <option value="2">vanilla</option>
-    <option value="3">caramel</option>
-    <option value="4">hazelnut</option>
-    </select></p>
-
-         <label for="totalBill" id="tBill">Total Bill</label>
-        <input type="int" id="totalBill" placeholder="Total"></form><br>
-
-    <br>
+    
         <label for="Starters" id="starters">Starters</label>
         <input type="int" id="starters" placeholder="Total Starters"></form><br>
 <br>
-
-<label for="Main" id="main">Main</label>
-<input type="int" id="main" placeholder="Total Main"></form><br>
-<br>
-
-<label for="Dessert" id="dessert">Dessert</label>
-<input type="int" id="dessert" placeholder="Total Dessert"></form><br>
-<br>
-
-<label for="Drinks" id="drinks">Drinks</label>
-<input type="int" id="Drinks" placeholder="Total Drinks"></form><br>
-<br>
-
-<label for="VegetarianCost" id="VegCost">Vegetarian Cost</label>
-<input type="int" id="vegCost" placeholder="Total Vegetarian Cost"></form><br>
-<br>
-
-<label for="Non-VegCost" id="non-vegCost">Non-Vegetarian Cost</label>
-<input type="int" id="non-vegCost" placeholder="Total Non-Veg Cost"></form><br>
-<br>
-
-<button onclick="validate()" type="button">Calculate</button>
-
+<tr>
+    <td class="total">&nbsp;</td>
+    <td class="total right"><strong>Total:</strong></td>
+    <td class="total"><strong>
+            <div id="ItemsTotal">€0</div>
+        </strong></td>
+</tr>
     </div>
     <!-- Footer -->
     <div class="footer">
