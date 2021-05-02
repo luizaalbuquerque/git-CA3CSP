@@ -2,7 +2,7 @@
 
 function validate() {
     // access the value inside the text box (id passwordValidator)
-    var passwordValidator = document.getElementById("PasswordValidator").Pvalidator;
+    var passwordValidator = document.getElementById("PasswordValidator").value;
     // creating a regex object (literal)
     var regx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
     alert(passwordValidator)
@@ -23,5 +23,5 @@ function validate() {
     function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
-}
+
 
