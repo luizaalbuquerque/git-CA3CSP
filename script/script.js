@@ -24,81 +24,20 @@ function validate() {
     }
 }
 
-function Starters(){
-
-    var els = document.getElementById('starters').getElementsByTagName("input");
+function total(nomedadiv){
+    
+    var els = document.getElementById(nomedadiv).getElementsByTagName("input");
     var totaldiv = 0;
-    alert(els);
+ 
 
     for (var i =0; i < els.length;i++)
     {
         multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
         totaldiv = totaldiv + multiplicacao;
-        alert(totaldiv);
-    }}
-
-    function Main(){
-
-        var els = document.getElementById('main').getElementsByTagName("input");
-        var totaldiv = 0;
-    
-        for (var i =0; i < els.length;i++)
-        {
-            multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
-            totaldiv = totaldiv + multiplicacao;
-            alert(totaldiv);
-        }
-    
-    
-        
-    
+     
     }
-    function Desserts(){
+    var ItemsTotal = document.getElementById("ItemsTotal"+ nomedadiv)
+    ItemsTotal.innerHTML = "€" + totaldiv;
+}
 
-        var els = document.getElementById('desserts').getElementsByTagName("input");
-        var totaldiv = 0;
-    
-        for (var i =0; i < els.length;i++)
-        {
-            multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
-            totaldiv = totaldiv + multiplicacao;
-            alert(totaldiv);
-        }
-    
-    
-        
-    
-    }   
-    function Drinks(){
-
-        var els = document.getElementById('drinks').getElementsByTagName("input");
-        var totaldiv = 0;
-    
-        for (var i =0; i < els.length;i++)
-        {
-            multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
-            totaldiv = totaldiv + multiplicacao;
-            alert(totaldiv);
-        }
-    
-    
-        
-    
-    }
-    function Total(){
-
-        var els = document.getElementById('Total').getElementsByTagName("input");
-        var totaldiv = 0;
-    
-        for (var i =0; i < els.length;i++)
-        {
-            multiplicacao = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
-            totaldiv = totaldiv + multiplicacao;
-            alert(totaldiv);
-        }
-    
-    
-        
-    
-    }
-
+ 
