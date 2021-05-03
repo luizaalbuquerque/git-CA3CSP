@@ -1,5 +1,4 @@
 /* content style */
-
 .box {
     width:60%;
     text-align: center;
@@ -131,26 +130,18 @@ background-color: rgb(238, 190, 118);
 #inValid {
   display: none;
 }
-
+/* customer Style */
 .boxCustomer{
-  width:60%;
+
     text-align: center;
     border: 5px solid rgb(0, 0, 0);
     border-style:double;
-    margin:100px;
+    margin:20px;
 background-color: rgb(228, 170, 84);
-padding: 50px; 
+ 
 }
+/* veg variable */
 .veg{
   color:green;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.border{
-  display: block;
-   
-     
-    overflow: hidden; 
-    border-style: inset; 
-    border-width: 1px;
-
 }
