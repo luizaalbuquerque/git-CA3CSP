@@ -23,35 +23,81 @@ function validate() {
         other.style.display = "none";
     }
 }
+//customer
+
+window.onload = CallJson;
+
+        function CallJson(){
+            fetch('https://randomuser.me/api/?results=6')
+            .then((load) => load.json())
+            .then((data) => {
+                let datas = data.results;
+                let output = '<h2>Random Users:</h2>'
+                console.log(data);
+                datas.forEach(function(costumer){
+                    output += `
+                    <div class="boxCustomer">
+                        <ul>
+
+                            <p>Nome: ${costumer.name.first} ${costumer.name.last}</p>
+                            <img src="${costumer.picture.thumbnail}">
+                            <li>${costumer.phone}</li>
+                            <li>${costumer.dob.date}</li>
+                            <li>${costumer.dob.age}</li>
+                            <li>${costumer.email}</li>
+                            <li>${costumer.gender}</li>
+                            <li>${costumer.location.city}</li>
+                            <li>${costumer.location.country}</li>
+                            <li>${costumer.location.postcode}</li>
+                      
+                        </ul>
+                    </div>
+                    `;
+                });
+
+                document.getElementById('CustumerGenerator').innerHTML = output;
+
+            })
+        }
+
+
+
+
+
+
 
 // totals
 function total(namediv){
-    
+
+    var veganItens = new Array("isso é evegano","Mushroom Brushchetta with Balsamic and Thyme","Creamy Brocoli pasta","Vegan Lemon Cheesecake")
+
     var els = document.getElementById(namediv).getElementsByTagName("input");
     var totaldiv = 0;
+    var pricevegan = 0;
+    var pricenovegan = 0;
 
 
     for (var i =0; i < els.length;i++)
     {
-        if (namediv === "starters" || namediv === "main" ) 
-        {   
-          
-           
-            if ("Mushroom Brushchetta with Balsamic and Thyme" === els[i].getAttribute("name") || "Creamy Brocoli pasta" === els[i].getAttribute("name"))
-            {
-                
+   
+var veganorno = ((veganItens.indexOf(els[i].getAttribute("name"))) > -1);
 
-                vegvalue = parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value));
+        if (veganorno === true) 
+        {   
+          pricevegan =  pricevegan + (parseFloat(els[i].getAttribute("data-price") * parseFloat(els[i].value)));
+        
+            pricenovegan =totaldiv;
+
 
             
     var ItemsTotal = document.getElementById("veg"+ namediv)
-    ItemsTotal.innerHTML = "€" + vegvalue;
+    ItemsTotal.innerHTML = "€" + pricevegan;
     // validate = 1;
 
     var ItemsTotal = document.getElementById("non-veg"+namediv)
-    ItemsTotal.innerHTML = "€" + totaldiv;
+    ItemsTotal.innerHTML = "€" + pricenovegan;
 
-            }
+            
         }
         
         
@@ -66,4 +112,3 @@ function total(namediv){
     ItemsTotal.innerHTML = "€" + totaldiv;
 }
 
- 
