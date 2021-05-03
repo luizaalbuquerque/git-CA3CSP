@@ -145,3 +145,12 @@ padding: 50px;
   color:green;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.border{
+  display: block;
+   
+     
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+
+}
