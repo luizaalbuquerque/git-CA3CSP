@@ -80,6 +80,7 @@ function total(namediv) {
     var totaldiv = 0;
     var priceveg = 0;
     var pricenoveg = 0;
+   
 
 
     for (var i = 0; i < el.length; i++) {
@@ -89,23 +90,36 @@ function total(namediv) {
         if (vegorno === true) {
             priceveg = priceveg + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)));
 
-            pricenoveg = totaldiv;
-
-            var ItemsTotal = document.getElementById("veg" + namediv)
-            ItemsTotal.innerHTML = "€" + priceveg;
-
-
-            var ItemsTotal = document.getElementById("non-veg" + namediv)
-            ItemsTotal.innerHTML = "€" + pricenoveg;
+          
 
         }
+
+        
 
         multiply = parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value));
         totaldiv = totaldiv + multiply;
 
     }
+   try{
 
+   
+    var ItemsTotal = document.getElementById("veg" + namediv)
+            ItemsTotal.innerHTML = "€" + priceveg;
+
+
+            var ItemsTotal = document.getElementById("non-veg" + namediv)
+            ItemsTotal.innerHTML = "€" + (parseInt(totaldiv - priceveg));
+
+            
+        }
+   
+
+   finally
+   {
+
+ 
     var ItemsTotal = document.getElementById("ItemsTotal" + namediv)
     ItemsTotal.innerHTML = "€" + totaldiv;
+}
 }
 
