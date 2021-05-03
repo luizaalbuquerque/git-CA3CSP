@@ -124,7 +124,6 @@ background-color: rgb(238, 190, 118);
   color:rgb(238, 190, 118);
 }
 
-
 /* Password validator */
 #valid {
   display: none;
@@ -133,3 +132,12 @@ background-color: rgb(238, 190, 118);
   display: none;
 }
 
+.boxCustomer{
+  width:60%;
+    text-align: center;
+    border: 5px solid rgb(0, 0, 0);
+    border-style:double;
+    margin:100px;
+background-color: rgb(228, 170, 84);
+padding: 50px; 
+}
