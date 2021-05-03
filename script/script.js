@@ -32,23 +32,32 @@ window.onload = CallJson;
             .then((load) => load.json())
             .then((data) => {
                 let datas = data.results;
-                let output = '<h2>Random Users:</h2>'
+                let output = '<h2>Customers</h2>'
+            
                 console.log(data);
                 datas.forEach(function(costumer){
                     output += `
                     <div class="boxCustomer">
                         <ul>
 
-                            <p>Nome: ${costumer.name.first} ${costumer.name.last}</p>
+                            <p><strong>Name: </strong>${costumer.name.first} ${costumer.name.last}</p>
                             <img src="${costumer.picture.thumbnail}">
-                            <li>${costumer.phone}</li>
-                            <li>${costumer.dob.date}</li>
-                            <li>${costumer.dob.age}</li>
-                            <li>${costumer.email}</li>
-                            <li>${costumer.gender}</li>
-                            <li>${costumer.location.city}</li>
-                            <li>${costumer.location.country}</li>
-                            <li>${costumer.location.postcode}</li>
+                         <hr>
+                            <p><strong>Phone: </strong>${costumer.phone}</p>
+                            <hr>
+                            <p><strong>DOB: </strong>${costumer.dob.date}</p>
+                            <hr>
+                            <p><strong>Age: </strong>${costumer.dob.age}</p>
+                            <hr>
+                           <p><strong>Email: </strong>${costumer.email}</p>
+                           <hr>
+                            <p><strong>Gender: </strong>${costumer.gender}</p>
+                            <hr>
+                            <p><strong>City: </strong>${costumer.location.city}</p>
+                            <hr>
+                          <p><strong>Country: </strong>${costumer.location.country}</p>
+                          <hr>
+                            <p><strong>PostCode: </strong>${costumer.location.postcode}</p>
                       
                         </ul>
                     </div>
