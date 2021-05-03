@@ -74,29 +74,29 @@ function CallJson() {
 // totals generator
 function total(namediv) {
 
-    var veganItens = new Array("isso é evegano", "Mushroom Brushchetta with Balsamic and Thyme", "Creamy Brocoli pasta", "Vegan Lemon Cheesecake")
+    var vegItens = new Array("Mushroom Brushchetta with Balsamic and Thyme", "Creamy Brocoli pasta", "Vegan Lemon Cheesecake")
 
     var el = document.getElementById(namediv).getElementsByTagName("input");
     var totaldiv = 0;
-    var pricevegan = 0;
-    var pricenovegan = 0;
+    var priceveg = 0;
+    var pricenoveg = 0;
 
 
     for (var i = 0; i < el.length; i++) {
 
-        var veganorno = ((veganItens.indexOf(el[i].getAttribute("name"))) > -1);
+        var vegorno = ((vegItens.indexOf(el[i].getAttribute("name"))) > -1);
 
-        if (veganorno === true) {
-            pricevegan = pricevegan + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)));
+        if (vegorno === true) {
+            priceveg = priceveg + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)));
 
-            pricenovegan = totaldiv;
+            pricenoveg = totaldiv;
 
             var ItemsTotal = document.getElementById("veg" + namediv)
-            ItemsTotal.innerHTML = "€" + pricevegan;
+            ItemsTotal.innerHTML = "€" + priceveg;
 
 
             var ItemsTotal = document.getElementById("non-veg" + namediv)
-            ItemsTotal.innerHTML = "€" + pricenovegan;
+            ItemsTotal.innerHTML = "€" + pricenoveg;
 
         }
 
