@@ -4,7 +4,7 @@
 <head>
     <title>Page 1</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -122,6 +122,7 @@
 
                         <th>Quantity</th>
                         <th>Price</th>
+                
 
                     <tr>
                         <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
@@ -150,21 +151,20 @@
             </div>
             
             <tr>
+                <button onclick="total('starters')" type="button">Total</button>
                 <td class="total">&nbsp;</td>
                 <td class="total right"><strong>Total :</strong></td>
-                <td class="total"><strong>
-
-                        <div id="ItemsTotalstarters">€0</div>
+                <td class="total"><strong><div id="ItemsTotalstarters">€0</div>
                     </strong>
                     <label>Vegetarian Total</label>
                     <div id="vegstarters">€0</div>
 
                     <label>Non-vegetarian Total </label>
                     <div id="non-vegstarters">€0</div>
-                    <button onclick="total('starters')" type="button">Total</button>
+                   
             </tr>
             </tr>
-            </table>
+                    </table>
 
             <div id="main">
                 <table>
@@ -203,7 +203,7 @@
                     </tr>
 
                    
-         
+         <td>
             <label>Vegetarian Total </label>
             <div id="vegmain">€0</div>
 
@@ -219,6 +219,7 @@
                     </strong>
                     <button onclick="total('main')" type="button">Total</button>
             </tr>
+            </td>
         </div>
             <tr>
             </table>
@@ -301,26 +302,12 @@
                     </tr>
                     <tr>
                         <td>Coffee Latte</td>
-                        <select id="milk">
-                            <option value="1">fresh milk</option>
-                            <option value="2">coconut</option>
-                            <option value="3">almond</option>
-                        </select></p>
+                       
                         <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="4" /></td>
                         <td>€4</td>
                     </tr>
 
-                    <tr>
-                        <td>Iced Latte</td>
-                        <select id="syrup">
-                            <option value="1">no syrup</option>
-                            <option value="2">vanilla</option>
-                            <option value="3">caramel</option>
-                            <option value="4">hazelnut</option>
-                        </select></p>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="5" /></td>
-                        <td>€5</td>
-                    </tr>
+                   
 
 
 
