@@ -107,8 +107,9 @@
                     <td><button onclick="total('starters')" type="button">Total</button></td>
 
                     </tr>
+                    </table>
             </div>
-            </table>
+          
 
             <div id="main">
                 <table>
@@ -167,12 +168,13 @@
                     <td> <button onclick="total('main')" type="button">Total</button></td>
 
                     </tr>
-
+                </table>
             </div>
             <tr>
-                </table>
+
+
                 <div id="desserts">
-                    <table>
+               <table>
                         <h3>Desserts</h3>
                         <hr>
                         <tr>
@@ -205,6 +207,19 @@
                                     data-price="7" /></td>
                             <td>€7</td>
                         </tr>
+
+                    <tr>
+                        <td><strong><label>Vegetarian Total </label></strong></td>
+                        <td>
+                            <div id="vegdesserts">€0</div>
+                        </td>
+                    <tr>
+                        <td><strong><label>Non-vegetarian Total</label></strong></td>
+                        <td>
+                            <div id="non-vegdesserts">€0</div>
+                        </td>
+
+                    </tr>
                         <tr>
                             <td class="total right"><strong>Total Desserts:</strong></td>
                             <td>
@@ -264,13 +279,28 @@
                         </tr>
                     </table>
                 </div>
+              
+
         </div>
 
         <h3>Total Bill</h3>
         <hr>
-        <strong>
+        <tr>
+            <td><strong><label>Vegetarian Total </label></strong></td>
+            <td>
+                <div id="vegtotal">€0</div>
+            </td>
+        <tr>
+            <td><strong><label>Non-vegetarian Total</label></strong></td>
+            <td>
+                <div id="non-vegtotal">€0</div>
+            </td>
+
+        </tr>
+<strong><p>Total:</p></strong> 
+     <td>  <strong>
             <div id="ItemsTotaltotal">€0</div>
-        </strong>
+        </strong></td>
         <button onclick="total('total')" type="button">Total</button>
 
     </div>
