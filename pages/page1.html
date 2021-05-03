@@ -4,8 +4,7 @@
 <head>
     <title>Page 1</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+   
 </head>
 
 <body>
@@ -38,77 +37,10 @@
     </div>
 
     <div class="box">
-        <h1>Customers</h1>
-        <div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
-<div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
-<div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
-<div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
-<div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
-<div class="boxCustomer">
-<h3>Name:</h3>
-<p>Phone number:</p>
-<p>DOB:</p>
-<p>Age:</p>
-<p>Email ID:</p>
-<p>Gender:</p>
-<p>City:</p>
-<p>Country:</p>
-<p>PostCode:</p>
-</div>
+        <div id="CustumerGenerator" ></div>
+ 
 
 
-
-<button onclick="GenerateCustomers('generate')" type="button">Generate</button>
     </div>
     <div class="box">
         <div id="total">
@@ -143,7 +75,7 @@
                         <td>€6</td>
                     </tr>
                     <tr>
-                        <td>Mushroom Brushchetta with Balsamic and Thyme</td>
+                        <td>Mushroom Brushchetta with Balsamic and Thyme <strong class="veg"><p>Veg</p></strong></td>
                         <td><input name="Mushroom Brushchetta with Balsamic and Thyme" id="4" value="0" size="2"
                                 data-price="9" /></td>
                         <td>€9</td></tr>    </tr></table>
@@ -196,7 +128,7 @@
                         <td>€12</td>
                     </tr>
                     <tr>
-                        <td>Creamy Brocoli pasta</td>
+                        <td>Creamy Brocoli pasta <strong class="veg"><p>Veg</p></strong></td> 
                         <td><input name="Creamy Brocoli pasta" type="text" id="qnt_4" value="0" size="3"
                                 data-price="11" /></td>
                         <td>€11</td>
@@ -250,8 +182,8 @@
                         <td>€6</td>
                     </tr>
                     <tr>
-                        <td>Vegan Lemon Cheesecake</td>
-                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="7" /></td>
+                        <td>Vegan Lemon Cheesecake <strong class="veg"><p>Veg</p></strong></td>
+                        <td><input name="Vegan Lemon Cheesecake" type="text" id="qnt_4" value="0" size="3" data-price="7" /></td>
                         <td>€7</td>
                     </tr>
                     <tr>
@@ -350,6 +282,8 @@
         </div>
     </div>
     <script src="../script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </body>
 
 </html>
