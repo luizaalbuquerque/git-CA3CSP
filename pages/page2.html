@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../script/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <title>Page 2</title>
 </head>
@@ -24,20 +26,23 @@
 
         <h1>Starters</h1>
         <hr>
-        <h3>Prawn Cocktail</h3>
+<button onclick="showImage('#img1')">Prawn Cocktail</button>
+        <div id="Hide" >
+          <img class="Restaurant" id="img1" src="../images/PrawnCocktail.jpeg">
+        </div>
+     
         <p>(Cooked prawns, mayonnaise, double cream, tomato ketchup, lemon juice, paprika, lettuce leaves)</p>
-
-        <img src="http://www.edmdistrict.com/wp-content/uploads/2016/04/Sun-Smiling-Blue-Sky-Cartoon-Fotolia_9210923_XS.jpg" id="myP">
-
-        <button type="button" onclick="myFunction()">Hide content of p</button>
-        <button type="button" onclick="myFunction2()">show content of p</button>
         
-    
-
-
-        <h3>Deep-Fried Mozzarella Balls With Smoky Tomato Sauce</h3>
+        <hr>
+<button onclick="showImage('#img2')">Deep-Fried Mozzarella Balls With Smoky Tomato Sauce</button>
+        <div id="Hide" >
+          <img class="Restaurant" id="img2" src="../images/deep-fried-mozzarella-balls-with-smoky-tomato-sauce-14861-3.jpeg">
+        </div>
+          
+        
         <p>(Baby bocconcini, panic breadcrumbs, flour, eggs, sunflower oil, parsley leaves, tomato, paprika, garlic,
             brown sugar)</p>
+            <hr>
 
         <h3>Blooming Onion With Fry Sauce</h3>
         <p>
