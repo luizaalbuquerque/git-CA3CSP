@@ -130,6 +130,15 @@ background-color: rgb(238, 190, 118);
 #inValid {
   display: none;
 }
+/* img page 2 */
+#Hide
+{
+  display:block;
+}
+.Restaurant{
+  width:50%;
+}
+
 /* customer Style */
 .boxCustomer{
 
