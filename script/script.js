@@ -65,11 +65,10 @@ function CallJson() {
                     `;
             });
 
-            document.getElementById('CustumerGenerator').innerHTML = output;
+            document.getElementById('CustomerGenerator').innerHTML = output;
 
         })
 }
-
 
 // totals generator
 function total(namediv) {
@@ -90,11 +89,8 @@ function total(namediv) {
         if (vegorno === true) {
             priceveg = priceveg + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)));
 
-          
 
         }
-
-        
 
         multiply = parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value));
         totaldiv = totaldiv + multiply;
@@ -112,12 +108,11 @@ function total(namediv) {
 
             
         }
-   
+
 
    finally
    {
 
- 
     var ItemsTotal = document.getElementById("ItemsTotal" + namediv)
     ItemsTotal.innerHTML = "€" + totaldiv;
 }
