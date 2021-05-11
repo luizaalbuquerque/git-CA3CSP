@@ -22,9 +22,7 @@ height: 100%;
 .navbar a {
 float: right;
 background-color: black;
-display: block;
 color: #f2f2f2;
-text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
@@ -32,7 +30,6 @@ font-size: 17px;
 
 .navbar ul li {
 display: inline;
-padding: 100px;
   }
   
 .navbar ul li a {
@@ -47,11 +44,8 @@ color: black;
 
 .title{
 font-family: cursive, fantasy, monospace;
-text-align: center;
-position:  absolute;
+position:  fixed;
 top: 0px;
-left:  10px;
-text-align: left;
 color: blanchedAlmond;
  } 
 
