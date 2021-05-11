@@ -26,17 +26,19 @@ function validate() {
 }
 //customer generator
 
-window.onload = CallJson;
+window.onload = CallJson; //calls the function as soon as the page is loaded
 
+// function to generate random users 
 function CallJson() {
-    fetch('https://randomuser.me/api/?results=6')
+    fetch('https://randomuser.me/api/?results=6') //generates 6 random customers using this API 
         .then((load) => load.json())
         .then((data) => {
             let datas = data.results;
-            let output = '<h2>Customers</h2>'
+            let output = '<h2>Customers</h2>' //title of the customers generator
 
             console.log(data);
             datas.forEach(function (costumer) {
+                // gets the output of the following informations
                 output += `
                     <div class="boxCustomer">
                         <ul>
@@ -65,54 +67,62 @@ function CallJson() {
                     `;
             });
 
-            document.getElementById('CustomerGenerator').innerHTML = output;
+            document.getElementById('CustomerGenerator').innerHTML = output; //sets the content 
 
         })
 }
 
 // totals generator
+
+// function to generate the totals of the menu 
 function total(namediv) {
 
+    // gets all the vegetarian plates, making easy to modify the code if any veg options have to be add or removed 
     var vegItens = new Array("Mushroom Brushchetta with Balsamic and Thyme", "Creamy Brocoli pasta", "Vegan Lemon Cheesecake")
 
+    // set the variables 
     var el = document.getElementById(namediv).getElementsByTagName("input");
     var totaldiv = 0;
     var priceveg = 0;
     var pricenoveg = 0;
    
 
-
+// run through all input
     for (var i = 0; i < el.length; i++) {
 
+        // compare if the name of the input is on the vegetarian list
         var vegorno = ((vegItens.indexOf(el[i].getAttribute("name"))) > -1);
 
+        // if the answer is true (because I m using boolean >) does the vegetarian total 
         if (vegorno === true) {
-            priceveg = priceveg + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)));
+            priceveg = priceveg + (parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value))); //calculates the vegetarian total 
 
 
         }
 
-        multiply = parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value));
-        totaldiv = totaldiv + multiply;
+        multiply = parseFloat(el[i].getAttribute("data-price") * parseFloat(el[i].value)); //this line multiplys the quantity by the price 
+        totaldiv = totaldiv + multiply; //to give the final total, is needed to add all the numbers after the multiplication 
 
     }
    try{
 
-   
+// gives the vegetarian total 
     var ItemsTotal = document.getElementById("veg" + namediv)
-            ItemsTotal.innerHTML = "€" + priceveg;
+            ItemsTotal.innerHTML = "€" + priceveg; 
 
 
+            // gives the non vegetarian total 
             var ItemsTotal = document.getElementById("non-veg" + namediv)
             ItemsTotal.innerHTML = "€" + (parseInt(totaldiv - priceveg));
 
             
         }
 
-
+// finally will execute the code regardless of the result of try 
    finally
    {
 
+    // gives the total of the bill, including vegetarian and not vegetarian 
     var ItemsTotal = document.getElementById("ItemsTotal" + namediv)
     ItemsTotal.innerHTML = "€" + totaldiv;
 }
