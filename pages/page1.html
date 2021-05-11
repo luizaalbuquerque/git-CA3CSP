@@ -49,6 +49,7 @@
             <hr>
             <div id="starters">
                 <table>
+                    <!-- starters -->
                     <h3>Starters</h3>
                     <hr>
                     <tr>
@@ -59,7 +60,8 @@
 
 
                     <tr>
-                        <td>Deep-Fried Mozzarella balls with smoky tomato sauce</td>
+                        <td><b>Deep-Fried Mozzarella balls with smoky tomato sauce</b> (Baby bocconcini, panic breadcrumbs, flour, eggs, sunflower oil, parsley leaves, tomato, paprika, garlic,
+                            brown sugar).</td>
                         <td>
                             <input name="Deep-Fried Mozzarella balls with smoky tomato sauce" id="1" value="0" size="2"
                                 data-price="11" />
@@ -67,17 +69,19 @@
                         <td>€11</td>
                     </tr>
                     <tr>
-                        <td>Prawn cocktail</td>
+                        <td><b>Prawn cocktail </b> (Cooked prawns, mayonnaise, double cream, tomato ketchup, lemon juice, paprika, lettuce leaves).</td>
+                        
                         <td><input name="Prawn cocktail" id="2" value="0" size="2" data-price="9" /></td>
                         <td>€9</td>
+                        
                     </tr>
                     <tr>
-                        <td>Blooming onion with fry sauce</td>
+                        <td><b>Blooming onion with fry sauce</b>  (Onion, flour, egg, milk, ketchup and mayonnase).</td>
                         <td><input name="Blooming onion with fry sauce" id="3" value="0" size="2" data-price="6" /></td>
                         <td>€6</td>
                     </tr>
                     <tr>
-                        <td>Mushroom Brushchetta with Balsamic and Thyme <strong class="veg">
+                        <td><b>Mushroom Brushchetta with Balsamic and Thyme </b>  (Mushrooms, olive oil, balsamic vinegar, sugar, thyme leaves, salt and pepper, garlic, bread).<strong class="veg">
                                 <p>Veg</p>
                             </strong></td>
                         <td><input name="Mushroom Brushchetta with Balsamic and Thyme" id="4" value="0" size="2"
@@ -87,18 +91,20 @@
                     </tr>
 
                     <tr>
+                        <!-- vegetarian total  -->
                         <td> <strong><label>Vegetarian Total</label></strong></td>
                         <td>
                             <div id="vegstarters">€0</div>
                         </td>
 
                     <tr>
+                        <!-- non vegetarian total -->
                         <td><strong><label>Non-vegetarian Total </label></strong></td>
                         <td>
                             <div id="non-vegstarters">€0</div>
                         </td>
                     </tr>
-
+                    <!-- total starters -->
                     <td class="total right"><strong>Total Starters :</strong></td>
                     <td>
                         <div id="ItemsTotalstarters">€0</div>
@@ -107,12 +113,13 @@
                     <td><button onclick="total('starters')" type="button">Total</button></td>
 
                     </tr>
-                    </table>
+                </table>
             </div>
-          
+
 
             <div id="main">
                 <table>
+                    <!-- main -->
                     <h3>Main</h3>
                     <hr>
                     <tr>
@@ -123,43 +130,45 @@
 
                     <tr>
                     <tr>
-                        <td>Smoked Salmon & Lemon risotto</td>
-                        <td><input name="Smoked Salmon & Lemon risotto" id="1" value="0" size="2"
-                                data-price="15" /></td>
+                        <td><b>Smoked Salmon & Lemon risotto</b> (Onion, olive oil, risotto rice, garlic, salmon, white wine, lemon, crème fraîche, butter, dill, parmesan
+                            cheese, black pepper, asparagus).</td>
+                        <td><input name="Smoked Salmon & Lemon risotto" id="1" value="0" size="2" data-price="15" />
+                        </td>
                         <td>€15</td>
                     </tr>
                     <tr>
-                        <td>Sausage & courgette pilau</td>
-                        <td><input name="Sausage & courgette pilau" id="2" value="0" size="2"
-                                data-price="11" /></td>
+                        <td><b>Sausage & courgette pilau</b>(Basmati rice, vegetable oil, sausages, fennel seeds, courgette, peas, broccoli, mint leaves, dill, fat-free
+                            yogurt).</td>
+                        <td><input name="Sausage & courgette pilau" id="2" value="0" size="2" data-price="11" /></td>
                         <td>€11</td>
                     </tr>
                     <tr>
-                        <td>Chicken Stroganoff</td>
-                        <td><input name="Chicken Stroganoff" id="3" value="0" size="2"
-                                data-price="12" /></td>
+                        <td><b>Chicken Stroganoff</b>(Rice, olive oil, butter, chestnut mushrooms, onions, garlic, chicken breasts, tomato, mustard, smoked
+                            paprika, soured cream, parsley, potato sticks).</td>
+                        <td><input name="Chicken Stroganoff" id="3" value="0" size="2" data-price="12" /></td>
                         <td>€12</td>
                     </tr>
                     <tr>
-                        <td>Creamy Brocoli pasta <strong class="veg">
+                        <td><b>Creamy Brocoli pasta</b> (Olive oil, flour, almond milk, garlic, onion powder, pasta, broccoli, salt, pepper, nutritional yeast).                            <strong class="veg">
                                 <p>Veg</p>
                             </strong></td>
-                        <td><input name="Creamy Brocoli pasta" id="4" value="0" size="2"
-                                data-price="11" /></td>
+                        <td><input name="Creamy Brocoli pasta" id="4" value="0" size="2" data-price="11" /></td>
                         <td>€11</td>
                     </tr>
 
                     <tr>
+                        <!-- vegetarian total  -->
                         <td><strong><label>Vegetarian Total </label></strong></td>
                         <td>
                             <div id="vegmain">€0</div>
                         </td>
                     <tr>
+                        <!-- non vegetarian total -->
                         <td><strong><label>Non-vegetarian Total</label></strong></td>
                         <td>
                             <div id="non-vegmain">€0</div>
                         </td>
-
+                        <!-- total main -->
                     </tr>
                     <td class="total right"><strong>Total Main:</strong></td>
                     <td>
@@ -174,7 +183,8 @@
 
 
                 <div id="desserts">
-               <table>
+                    <table>
+                        <!-- desserts -->
                         <h3>Desserts</h3>
                         <hr>
                         <tr>
@@ -185,41 +195,44 @@
 
                         <tr>
                         <tr>
-                            <td>Classic Petit Gateu</td>
+                            <td><b>Classic Petit Gateu</b>(Dark chocolate, unsalted butter, sugar, wheat flout, egg, vanilla ice cream and strawberry decoration).</td>
                             <td><input name="Classic Petit Gateu" id="1" value="0" size="2" data-price="9" /></td>
                             <td>€9</td>
                         </tr>
                         <tr>
-                            <td>Tiramisu</td>
+                            <td><b>Tiramisu</b>(Double cream, mascarpone, marsala, caster sugar, strong coffee, sponge fingers, dark chocolate, cocoa
+                                powder).</td>
                             <td><input name="Tiramisu" id="2" value="0" size="2" data-price="7" /></td>
                             <td>€7</td>
                         </tr>
                         <tr>
-                            <td>Custard Pudding</td>
+                            <td><b>Custard Pudding</b>(White sugar, salt, milk, vanilla extract, cornstarch, eggs, unsalted butter).</td>
                             <td><input name="ustard Pudding" id="3" value="0" size="2" data-price="6" /></td>
                             <td>€6</td>
                         </tr>
                         <tr>
-                            <td>Vegan Lemon Cheesecake <strong class="veg">
+                            <td><b>Vegan Lemon Cheesecake</b>(Coconut oil, almond, cashew nuts, almond milk, agave syrup, lemon). <strong class="veg">
                                     <p>Veg</p>
                                 </strong></td>
-                            <td><input name="Vegan Lemon Cheesecake" id="4" value="0" size="2"
-                                    data-price="7" /></td>
+                            <td><input name="Vegan Lemon Cheesecake" id="4" value="0" size="2" data-price="7" /></td>
                             <td>€7</td>
                         </tr>
 
-                    <tr>
-                        <td><strong><label>Vegetarian Total </label></strong></td>
-                        <td>
-                            <div id="vegdesserts">€0</div>
-                        </td>
-                    <tr>
-                        <td><strong><label>Non-vegetarian Total</label></strong></td>
-                        <td>
-                            <div id="non-vegdesserts">€0</div>
-                        </td>
+                        <tr>
+                            <!-- vegetarian total -->
+                            <td><strong><label>Vegetarian Total </label></strong></td>
+                            <td>
+                                <div id="vegdesserts">€0</div>
+                            </td>
+                        <tr>
+                            <!-- non vegetarian total  -->
+                            <td><strong><label>Non-vegetarian Total</label></strong></td>
+                            <td>
+                                <div id="non-vegdesserts">€0</div>
+                            </td>
 
-                    </tr>
+                            <!-- total desserts -->
+                        </tr>
                         <tr>
                             <td class="total right"><strong>Total Desserts:</strong></td>
                             <td>
@@ -233,6 +246,7 @@
 
                 <div id="drinks">
                     <table>
+                        <!-- drinks -->
 
                         <h3>Drinks</h3>
                         <hr>
@@ -270,6 +284,7 @@
                             <td>€4</td>
                         </tr>
 
+                        <!-- total drinks -->
                         <tr>
                             <td class="total right"><strong>Total Drinks:</strong></td>
                             <td>
@@ -279,28 +294,32 @@
                         </tr>
                     </table>
                 </div>
-              
 
         </div>
-
+        <!-- total -->
         <h3>Total Bill</h3>
         <hr>
         <tr>
+            <!-- vegetarian total -->
             <td><strong><label>Vegetarian Total </label></strong></td>
             <td>
                 <div id="vegtotal">€0</div>
             </td>
         <tr>
+            <!-- non vegetarian total  -->
             <td><strong><label>Non-vegetarian Total</label></strong></td>
             <td>
                 <div id="non-vegtotal">€0</div>
             </td>
 
         </tr>
-<strong><p>Total:</p></strong> 
-     <td>  <strong>
-            <div id="ItemsTotaltotal">€0</div>
-        </strong></td>
+        <!-- total -->
+        <strong>
+            <p>Total:</p>
+        </strong>
+        <td> <strong>
+                <div id="ItemsTotaltotal">€0</div>
+            </strong></td>
         <button onclick="total('total')" type="button">Total</button>
 
     </div>
