@@ -25,11 +25,13 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
   }
   
   .navbar ul li {
     display: inline;
     padding: 100px;
+
   }
   
   .navbar ul li a {
@@ -40,6 +42,7 @@ body {
   .navbar a:hover { 
     background: #ddd;
     color: black;
+
   }
 .title{
     font-family: cursive, fantasy, monospace;
