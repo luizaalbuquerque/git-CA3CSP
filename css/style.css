@@ -24,12 +24,13 @@ float: right;
 background-color: black;
 color: #f2f2f2;
 padding: 14px 16px;
-text-decoration: none;
 font-size: 17px;
   }
 
 .navbar ul li {
 display: inline;
+float: right;
+padding-top: 65px; 
   }
   
 .navbar ul li a {
