@@ -17,6 +17,7 @@ body {
    }
  /* navegation bar */
   .navbar a {
+
     float: right;
     background-color: black;
     display: block;
@@ -25,11 +26,10 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+
     
   }
-  .nabar{
-width: 40px;
-  }
+  
   .navbar ul li {
     display: inline;
     padding: 100px;
@@ -39,12 +39,13 @@ width: 40px;
   .navbar ul li a {
     color: rgb(238, 190, 118);
     font-family: Verdana, Arial, Helvetica, sans-serif;
+
   }
 
   .navbar a:hover { 
     background: #ddd;
     color: black;
-
+  
   }
 .title{
     font-family: cursive, fantasy, monospace;
