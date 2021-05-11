@@ -27,7 +27,9 @@ body {
     font-size: 17px;
     
   }
-  
+  .nabar{
+width: 40px;
+  }
   .navbar ul li {
     display: inline;
     padding: 100px;
